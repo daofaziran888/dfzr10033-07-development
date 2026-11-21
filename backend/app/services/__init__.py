@@ -18,6 +18,8 @@ from app.services.benchmark_set import BenchmarkSetService
 from app.services.query_audit import QueryAuditService
 from app.services.cost_govern import CostGovernService
 from app.services.freshness_mon import FreshnessMonService
+from app.services.stage_freshness import StageFreshnessService
+from app.services.freshness_breach import FreshnessBreachService
 from app.services.data_exporter import DataExporterService
 from app.services.schedule_job import ScheduleJobService
 from app.services.data_lake_read import DataLakeReadService
@@ -42,6 +44,8 @@ SERVICES: dict[str, BaseModuleService] = {
     "query_audit": QueryAuditService(),
     "cost_govern": CostGovernService(),
     "freshness_mon": FreshnessMonService(),
+    "stage_freshness": StageFreshnessService(),
+    "freshness_breach": FreshnessBreachService(),
     "data_exporter": DataExporterService(),
     "schedule_job": ScheduleJobService(),
     "data_lake_read": DataLakeReadService(),

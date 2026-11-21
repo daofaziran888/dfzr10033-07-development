@@ -110,8 +110,6 @@ rewrite_svc = QueryRewriteService()
 audit_svc = QueryAuditService()
 cost_svc = CostGovernService()
 contract_svc = DataContractService()
-
-
 @router.post("/pipelines/source-to-federated")
 def pipeline_source_to_federated(
     source_no: str = Query(...), source_type: str = Query(default="mysql"),
